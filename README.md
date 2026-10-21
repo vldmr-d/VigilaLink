@@ -1,5 +1,4 @@
 # VigilaLink
-VigilaLink turns an Android phone into a security camera, with another phone as the viewer.
 
 It turns an Android phone into a camera, with another phone acting as the viewer. With NetBird running on both devices, you can watch the camera remotely without exposing camera ports publicly or needing a separate VigilaLink cloud service.
 

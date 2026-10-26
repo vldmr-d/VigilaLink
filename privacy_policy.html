@@ -1,131 +1,108 @@
-# Privacy Policy for VigilaLink
-
-**Last updated: October 26, 2026**
-
-**Developer:** Volodymyr
-**Contact:** vldmr78moto@gmail.com
-**Android package:** info.volodymyr.vigilalink
-
-This Privacy Policy explains how VigilaLink accesses, uses, stores, and transmits information.
-
-VigilaLink allows you to use one Android device as a camera and another as a viewer, over a local network or a VPN that you configure. No VigilaLink account is required.
-
-## 1. Camera and microphone
-
-VigilaLink accesses the camera to provide video previews, stream video to an authorized viewer, and scan pairing QR codes.
-
-When audio is enabled and microphone permission is granted, VigilaLink accesses the microphone to transmit audio to the authorized viewer.
-
-Video and audio are processed on your devices and transmitted between them. The developer does not operate a server that receives or stores these streams.
-
-Camera mode may continue operating with the screen off through an Android foreground service with a visible notification.
-
-## 2. Device pairing and connection information
-
-To discover, authorize, and reconnect devices, VigilaLink processes information such as:
-
-- Device names and device model information.
-- IP addresses, network interfaces, ports, and connection status.
-- Bluetooth device names and addresses.
-- Pairing credentials, public certificate fingerprints, and session information.
-
-Bluetooth and QR codes are used to exchange pairing or connection information. Bluetooth may also update connection addresses between previously authorized devices.
-
-Local network discovery may advertise the camera’s network address, port, and a public certificate identifier to nearby devices. Private authorization credentials are not included in these discovery announcements.
-
-Pairing information is stored locally so that you do not need to pair your devices every time you use the app.
-
-## 3. Battery information
-
-The camera device may send its battery level, charging status, and reported battery temperature to the authorized viewer. This information helps you monitor the camera device.
-
-These values may also appear in local diagnostic logs.
-
-## 4. Photos and recordings
-
-When you choose to take a photo or record video, VigilaLink saves the resulting files on the viewer device. Recordings may contain audio when the camera is transmitting audio, including when sound playback on the viewer is muted.
-
-You can optionally include a date and time overlay in saved media.
-
-VigilaLink does not automatically upload your photos or recordings to the developer. However, your gallery, backup application, or another service that you have configured may synchronize these files according to its own settings and privacy policy.
-
-## 5. Diagnostic logs
-
-VigilaLink keeps limited diagnostic logs locally to help investigate pairing, connection, and streaming problems.
-
-Logs may include timestamps, app and Android versions, network addresses, selected connection modes, connection states, battery information, and technical error details.
-
-Diagnostic logs do not intentionally contain video, audio, photos, private pairing credentials, or private cryptographic keys.
-
-Internal logs are limited to approximately 24 hours and a maximum total size of 2 MiB. Cleanup takes place while the app is running, including when logs are accessed or exported.
-
-Logs are not automatically sent to the developer. You can explicitly save or share them. Exported copies remain wherever you save or send them until you or the recipient deletes them; the internal retention limit does not apply to those copies.
-
-## 6. Permissions
-
-Depending on your Android version and the features you use, VigilaLink may request:
-
-- **Camera:** for video capture and QR scanning.
-- **Microphone:** for audio transmission.
-- **Nearby devices or Bluetooth:** for discovery, pairing, and connection updates.
-- **Location on older Android versions:** required by Android for Bluetooth discovery. VigilaLink does not use this permission to obtain GPS coordinates or track your location.
-- **Storage on older Android versions:** to save photos and recordings.
-- **Notifications:** to display service and operational notifications.
-- **Network access:** to communicate with your authorized devices.
-
-You can manage permissions in Android settings. Denying a permission may prevent the related feature from working.
-
-## 7. Sharing and third-party services
-
-VigilaLink transmits camera content and connection information to the devices you authorize. Information is also shared when you explicitly export a file or use Android’s sharing features.
-
-VigilaLink does not sell personal information and does not include advertising SDKs, behavioral advertising, or third-party analytics SDKs.
-
-The current version does not use developer-operated cloud storage, signaling servers, or video relay servers.
-
-If you use a VPN, your VPN provider or infrastructure may process network information according to its own configuration and privacy policy. VigilaLink does not operate or control that VPN.
-
-Android, Google Play, device manufacturers, and system services may independently process information under their own policies. For example, a system font provider may download compatibility fonts, and Google Play may process installation or diagnostic information according to your settings.
-
-## 8. Security
-
-VigilaLink uses encrypted WebRTC media transport and HTTPS connection signaling with certificate fingerprint verification.
-
-Saved pairing credentials are encrypted using keys managed through Android Keystore. Private connection keys are stored locally.
-
-These measures help protect communications, but no device, network, or storage method can be guaranteed completely secure. Keep your devices updated and authorize only devices you trust.
-
-## 9. Retention and deletion
-
-- **Pairing information:** remains locally until you unlink devices or remove the app’s stored data. To remove pairing information from both devices, unlink or clear the data on each device.
-- **App preferences:** remain until changed, cleared through Android settings, or removed when the app is uninstalled.
-- **Internal diagnostic logs:** follow the limits described above and can also be deleted using the app’s log controls.
-- **Photos, recordings, and exported logs:** remain until you delete them using your file manager, gallery, or the service where you stored them. Uninstalling VigilaLink may not remove these files.
-
-Android backup or device-transfer behavior may vary by operating system and manufacturer. Copies transferred or backed up by external services are subject to those services’ settings.
-
-The developer cannot remotely access or delete information stored only on your devices.
-
-If you voluntarily send diagnostic files or other information to the support contact, that information will be used to investigate your request. Support correspondence will be retained only as necessary to handle the request and any applicable legal obligations. You may request its deletion by contacting the email address above.
-
-## 10. Children’s privacy
-
-VigilaLink is not specifically directed to children. The developer does not knowingly collect personal information from children through the app.
-
-If you believe a child has sent personal information directly to the developer, please contact us.
-
-## 11. Responsible use
-
-Use VigilaLink only on devices and in locations where you have permission to monitor or record. Respect the privacy of other people and obtain consent where required by applicable law.
-
-## 12. Changes to this policy
-
-This policy may be updated to reflect changes in the app or its data practices. The updated policy will be published on this page with a revised date.
-
-## 13. Contact
-
-For privacy questions or requests concerning information you have sent to the developer, contact:
-
-**Volodymyr**  
-**vldmr78moto@gmail.com**
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privacy Policy for VigilaLink: camera and audio streaming, device pairing, local recordings, and diagnostic logs.">
+<title>Privacy Policy — VigilaLink</title>
+<style>
+:root { color-scheme: light dark; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.7; color: #172334; background: #f2f5fa; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 32px 16px; }
+main { max-width: 860px; margin: auto; padding: clamp(20px, 5vw, 48px); background: #fff; border-radius: 20px; overflow-wrap: anywhere; }
+h1 { font-size: clamp(1.8rem, 5vw, 2.5rem); line-height: 1.2; margin-top: 0; color: #175ab5; }
+h2 { font-size: 1.3rem; line-height: 1.4; margin-top: 2rem; }
+p, ul { margin: 1rem 0; }
+li { margin: .5rem 0; }
+ul { padding-left: 1.4rem; }
+@media (prefers-color-scheme: dark) {
+ :root { color: #e3eaf4; background: #101820; }
+ main { background: #1b2734; }
+ h1 { color: #8bbcff; }
+}
+</style>
+</head>
+<body>
+<main>
+<h1>Privacy Policy for VigilaLink</h1>
+<p><strong>Last updated: October 26, 2026</strong></p>
+<p><strong>Developer:</strong> [DEVELOPER NAME]<br>
+<strong>Contact:</strong> [CONTACT EMAIL]<br>
+<strong>Android package:</strong> info.volodymyr.vigilalink</p>
+<p>This Privacy Policy explains how VigilaLink accesses, uses, stores, and transmits information.</p>
+<p>VigilaLink allows you to use one Android device as a camera and another as a viewer, over a local network or a VPN that you configure. No VigilaLink account is required.</p>
+<h2>1. Camera and microphone</h2>
+<p>VigilaLink accesses the camera to provide video previews, stream video to an authorized viewer, and scan pairing QR codes.</p>
+<p>When audio is enabled and microphone permission is granted, VigilaLink accesses the microphone to transmit audio to the authorized viewer.</p>
+<p>Video and audio are processed on your devices and transmitted between them. The developer does not operate a server that receives or stores these streams.</p>
+<p>Camera mode may continue operating with the screen off through an Android foreground service with a visible notification.</p>
+<h2>2. Device pairing and connection information</h2>
+<p>To discover, authorize, and reconnect devices, VigilaLink processes information such as:</p>
+<ul>
+<li>Device names and device model information.</li>
+<li>IP addresses, network interfaces, ports, and connection status.</li>
+<li>Bluetooth device names and addresses.</li>
+<li>Pairing credentials, public certificate fingerprints, and session information.</li>
+</ul>
+<p>Bluetooth and QR codes are used to exchange pairing or connection information. Bluetooth may also update connection addresses between previously authorized devices.</p>
+<p>Local network discovery may advertise the camera’s network address, port, and a public certificate identifier to nearby devices. Private authorization credentials are not included in these discovery announcements.</p>
+<p>Pairing information is stored locally so that you do not need to pair your devices every time you use the app.</p>
+<h2>3. Battery information</h2>
+<p>The camera device may send its battery level, charging status, and reported battery temperature to the authorized viewer. This information helps you monitor the camera device.</p>
+<p>These values may also appear in local diagnostic logs.</p>
+<h2>4. Photos and recordings</h2>
+<p>When you choose to take a photo or record video, VigilaLink saves the resulting files on the viewer device. Recordings may contain audio when the camera is transmitting audio, including when sound playback on the viewer is muted.</p>
+<p>You can optionally include a date and time overlay in saved media.</p>
+<p>VigilaLink does not automatically upload your photos or recordings to the developer. However, your gallery, backup application, or another service that you have configured may synchronize these files according to its own settings and privacy policy.</p>
+<h2>5. Diagnostic logs</h2>
+<p>VigilaLink keeps limited diagnostic logs locally to help investigate pairing, connection, and streaming problems.</p>
+<p>Logs may include timestamps, app and Android versions, network addresses, selected connection modes, connection states, battery information, and technical error details.</p>
+<p>Diagnostic logs do not intentionally contain video, audio, photos, private pairing credentials, or private cryptographic keys.</p>
+<p>Internal logs are limited to approximately 24 hours and a maximum total size of 2 MiB. Cleanup takes place while the app is running, including when logs are accessed or exported.</p>
+<p>Logs are not automatically sent to the developer. You can explicitly save or share them. Exported copies remain wherever you save or send them until you or the recipient deletes them; the internal retention limit does not apply to those copies.</p>
+<h2>6. Permissions</h2>
+<p>Depending on your Android version and the features you use, VigilaLink may request:</p>
+<ul>
+<li><strong>Camera:</strong> for video capture and QR scanning.</li>
+<li><strong>Microphone:</strong> for audio transmission.</li>
+<li><strong>Nearby devices or Bluetooth:</strong> for discovery, pairing, and connection updates.</li>
+<li><strong>Location on older Android versions:</strong> required by Android for Bluetooth discovery. VigilaLink does not use this permission to obtain GPS coordinates or track your location.</li>
+<li><strong>Storage on older Android versions:</strong> to save photos and recordings.</li>
+<li><strong>Notifications:</strong> to display service and operational notifications.</li>
+<li><strong>Network access:</strong> to communicate with your authorized devices.</li>
+</ul>
+<p>You can manage permissions in Android settings. Denying a permission may prevent the related feature from working.</p>
+<h2>7. Sharing and third-party services</h2>
+<p>VigilaLink transmits camera content and connection information to the devices you authorize. Information is also shared when you explicitly export a file or use Android’s sharing features.</p>
+<p>VigilaLink does not sell personal information and does not include advertising SDKs, behavioral advertising, or third-party analytics SDKs.</p>
+<p>The current version does not use developer-operated cloud storage, signaling servers, or video relay servers.</p>
+<p>If you use a VPN, your VPN provider or infrastructure may process network information according to its own configuration and privacy policy. VigilaLink does not operate or control that VPN.</p>
+<p>Android, Google Play, device manufacturers, and system services may independently process information under their own policies. For example, a system font provider may download compatibility fonts, and Google Play may process installation or diagnostic information according to your settings.</p>
+<h2>8. Security</h2>
+<p>VigilaLink uses encrypted WebRTC media transport and HTTPS connection signaling with certificate fingerprint verification.</p>
+<p>Saved pairing credentials are encrypted using keys managed through Android Keystore. Private connection keys are stored locally.</p>
+<p>These measures help protect communications, but no device, network, or storage method can be guaranteed completely secure. Keep your devices updated and authorize only devices you trust.</p>
+<h2>9. Retention and deletion</h2>
+<ul>
+<li><strong>Pairing information:</strong> remains locally until you unlink devices or remove the app’s stored data. To remove pairing information from both devices, unlink or clear the data on each device.</li>
+<li><strong>App preferences:</strong> remain until changed, cleared through Android settings, or removed when the app is uninstalled.</li>
+<li><strong>Internal diagnostic logs:</strong> follow the limits described above and can also be deleted using the app’s log controls.</li>
+<li><strong>Photos, recordings, and exported logs:</strong> remain until you delete them using your file manager, gallery, or the service where you stored them. Uninstalling VigilaLink may not remove these files.</li>
+</ul>
+<p>Android backup or device-transfer behavior may vary by operating system and manufacturer. Copies transferred or backed up by external services are subject to those services’ settings.</p>
+<p>The developer cannot remotely access or delete information stored only on your devices.</p>
+<p>If you voluntarily send diagnostic files or other information to the support contact, that information will be used to investigate your request. Support correspondence will be retained only as necessary to handle the request and any applicable legal obligations. You may request its deletion by contacting the email address above.</p>
+<h2>10. Children’s privacy</h2>
+<p>VigilaLink is not specifically directed to children. The developer does not knowingly collect personal information from children through the app.</p>
+<p>If you believe a child has sent personal information directly to the developer, please contact us.</p>
+<h2>11. Responsible use</h2>
+<p>Use VigilaLink only on devices and in locations where you have permission to monitor or record. Respect the privacy of other people and obtain consent where required by applicable law.</p>
+<h2>12. Changes to this policy</h2>
+<p>This policy may be updated to reflect changes in the app or its data practices. The updated policy will be published on this page with a revised date.</p>
+<h2>13. Contact</h2>
+<p>For privacy questions or requests concerning information you have sent to the developer, contact:</p>
+<p><strong>[DEVELOPER NAME]</strong><br>
+<strong>[CONTACT EMAIL]</strong></p>
+</main>
+</body>
+</html>

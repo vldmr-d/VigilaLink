@@ -15,6 +15,8 @@ It requires Android 12 or newer. I’ve tested it on a Motorola moto g32 and Sam
  
 The app is free to use, and I’m currently sharing the signed APK only; the source code is not public. 
  
-  Download: [https://github.com/vldmr-d/VigilaLink/releases](https://github.com/vldmr-d/VigilaLink/releases)
- 
+  Download1: [https://github.com/vldmr-d/VigilaLink/releases](https://github.com/vldmr-d/VigilaLink/releases)
+
+  Download2: [Google Play Store](https://play.google.com/apps/internaltest/4701209868860515192)
+  
 It’s still a small personal project, so feedback and reports from other devices would be very welcome. I hope someone in the community finds it useful!
